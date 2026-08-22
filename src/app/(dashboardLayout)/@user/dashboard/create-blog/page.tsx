@@ -1,7 +1,9 @@
-import React from "react";
+
+import CreateBlogForm from "@/components/modules/blog/create-blog-form";
+
 
 const CreateBlogPage = () => {
-  return <div>CreateBlogPage</div>;
+  return <CreateBlogForm />;
 };
 
 export default CreateBlogPage;

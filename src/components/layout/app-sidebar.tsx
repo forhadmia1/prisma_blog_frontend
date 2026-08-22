@@ -17,6 +17,7 @@ import { SearchForm } from "./search-form";
 import { adminRoutes } from "@/routes/adminRoutes";
 import { userRoutes } from "@/routes/userRoutes";
 import { Routes } from "@/types";
+import Role from "@/app/constants/Role";
 
 // This is sample data.
 
@@ -27,7 +28,7 @@ export function AppSidebar({
   let routes: Routes[] = [];
 
   switch (user.role) {
-    case "admin":
+    case Role.ADMIN:
       routes = adminRoutes;
       break;
 
