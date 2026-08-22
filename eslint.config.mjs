@@ -13,6 +13,16 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  {
+    rules: {
+      "react/no-children-prop": [
+        2,
+        {
+          allowFunctions: true,
+        },
+      ],
+    },
+  },
 ]);
 
 export default eslintConfig;
